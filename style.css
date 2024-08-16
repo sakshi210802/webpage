@@ -1,0 +1,72 @@
+
+/* Reset default margins and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 98vh;
+    width: 100%;
+    background: url(i.jpg);
+    background-position: cover;
+    color: #a4c029;
+}
+/* Navigation bar styling */
+nav{
+    display: flex;
+    padding: 20px 100px;
+}
+
+/* img styling */
+
+nav img{
+    width: 150px;
+}
+nav ul{
+    text-align: right;
+    display: inline;
+    list-style: none;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+.main-text{
+    margin: 15% auto;
+    text-align: center;
+}
+.main-text h1{
+    font-size: 50px;
+}
+.main-text .button{
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 35px;
+    margin: 25px auto;
+    color: #8b0e0e;
+    line-height: 35px;
+    border: 1px solid #fff;
+}
+.button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.bottom-img{
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.2;
+    animation: animate 8s Linear infinite;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
